@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "flow-engine.rule-source",
+      "type": "java.lang.String",
+      "description": "rule source extended data.",
+      "sourceType": "com.smart.flow.autoconfigure.FlowEngineConfigProperty"
+    },
+    {
+      "name": "flow-engine.current-thread-max-value",
+      "type": "java.lang.String",
+      "description": "rule source extended data.",
+      "sourceType": "com.smart.flow.autoconfigure.FlowEngineConfigProperty"
+    },
+    {
+      "name": "flow-engine.enable",
+      "type": "java.lang.String",
+      "description": "rule source extended data.",
+      "sourceType": "com.smart.flow.autoconfigure.FlowEngineConfigProperty",
+      "defaultValue": true
+    }
+  ]
+}

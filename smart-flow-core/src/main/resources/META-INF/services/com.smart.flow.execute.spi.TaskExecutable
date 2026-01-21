@@ -1,0 +1,6 @@
+# 任务执行器实现
+com.smart.flow.execute.spi.CommonNodeTaskExecutable
+com.smart.flow.execute.spi.ExclusiveGatewayNodeTaskExecutable
+com.smart.flow.execute.spi.ParallelGatewayNodeTaskExecutable
+com.smart.flow.execute.spi.StartNodeTaskExecutable
+com.smart.flow.execute.spi.EndNodeTaskExecutable

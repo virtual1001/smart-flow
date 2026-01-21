@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smart.flow.autoconfigure.FlowEnginePropertyAutoConfiguration,\
+  com.smart.flow.autoconfigure.FlowEngineMainAutoConfiguration

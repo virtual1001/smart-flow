@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server-nodes chainId="test" name = "测试流程" description="测试">
+    <start nodeId="start" name="初始化分区" description="开始节点">
+        <next-node go-to="aNode"/>
+    </start>
+
+    <common-node nodeId="aNode" name="aNode" description="anode">
+        <next-node go-to="bNode"/>
+
+    </common-node>
+
+    <common-node nodeId="bNode" name="算法在飞" description="anode">
+        <next-node go-to="routeToDORE"/>
+    </common-node>
+
+    <exclusive-gateway nodeId = "routeToDORE" name = "路由" description="路由">
+        <next-node go-to="dNode" rule-script="test == 'test1'"/>
+        <next-node go-to="eNode" rule-script="test == 'test'"/>
+    </exclusive-gateway>
+
+    <common-node nodeId="dNode" name="算法在飞" description="anode">
+        <next-node go-to="parallel"/>
+    </common-node>
+
+    <common-node nodeId="eNode" name="算法在飞" description="anode">
+        <next-node go-to="parallel"/>
+    </common-node>
+
+    <parallel-gateway nodeId = "parallel" name = "并行"  description = "并行">
+        <common-node nodeId="fNode" name="fNode" description="fNode"/>
+        <common-node nodeId="gNode" name="gNode" description="gNode"/>
+        <next-node go-to="hNode"/>
+    </parallel-gateway>
+    <common-node nodeId="hNode" name="hNode" description="hNode">
+        <next-node go-to="end"/>
+    </common-node>
+
+    <end nodeId="end" name="结束节点" description="结束节点"/>
+</server-nodes>
